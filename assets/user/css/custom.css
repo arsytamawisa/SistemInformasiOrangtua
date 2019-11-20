@@ -1,0 +1,15 @@
+.dropdown-item{
+	height: 50px;
+}
+
+.card-body{
+	max-height: 550px;
+	overflow: auto;
+}
+
+
+
+.content-inner, .page{
+	padding: 0;
+	margin: 0;
+}

@@ -1,0 +1,221 @@
+
+
+.btn-primary{	
+	background-color:white;
+	color:#428bca;
+	border-color:#428bca;
+	transition-duration: 0.6s;
+}
+
+.btn-primary:hover{
+	background-color:#428bca;
+	color:white;
+	border-color:white;
+	border-radius:0%;
+}
+.btn-primary:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.btn-danger{	
+	background-color:white;
+	color:#d9534f;
+	border-color:#d9534f;
+	transition-duration: 0.6s;
+}
+
+.btn-danger:hover{
+	background-color:#d9534f;
+	color:white;
+	border-color:white;
+	border-radius:0%;
+}
+.btn-danger:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+thead tr th{
+	background-color:#428bca;
+	color:white
+}
+
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+a#normal{
+	color: #909090;
+}
+
+a:hover#normal{
+	color: #404040;	
+}
+
+td#nomor{
+	width: 50px;
+}
+
+td#nis{
+	width: 200px;
+}
+
+td#nama{
+	width: 250px;
+}
+
+a.btn-danger{
+	min-width: 70px;
+}
+
+button{
+	margin-right: 10px;
+}
+
+#page-inner h3, #page-inner2 h3{
+	padding-bottom: 6px;
+	color: #777;
+	font-size: 18px;
+}
+
+.card.p-4{
+	background: #fff !important;
+	min-height: 200px !important;
+}
+
+.card.p-4 h2{
+	margin: 0;
+	padding: 70px 50px 0 50px;
+	color: #777;
+	font-size: 24px;
+}
+
+.card.p-4 h3{
+	margin: 0;
+	padding: 5px 50px 0 50px;
+	color: #777;
+	font-size: 18px;
+}
+
+.oi.oi-person, .oi.oi-book, .oi.oi-people{
+	padding-left: 80%;
+}
+
+.form-group label{
+	color: #777;
+	font-weight: normal;
+}
+
+#wrapper{
+	width: 100%;
+	background: #fff; 
+}
+
+.navbar{
+	margin-bottom: 0
+}
+
+.navbar.navbar-default{
+	background: #fff;
+}
+
+.navbar-side{
+	background: #202020;
+}
+
+.navbar-side .tr-tree > .tr-tree-menu{
+	padding:0;
+	margin:0;
+	list-style: none;
+	display: none;
+}
+
+.navbar-side .tr-tree > .tr-tree-menu li a{
+	display: block;
+	padding: 5px;
+}
+
+.navbar-side .tr-tree > .tr-tree-menu li a:hover{
+	background: #f4f4f4;
+	text-decoration: none;
+}
+
+.navbar-side .tr-tree > .tr-tree-menu li.active a{
+	background: #f9f9f9;
+	color: #222;
+}
+
+.navbar-side ul li a{
+	color: #fff;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.navbar-side ul li a:hover{
+	color: #202020;
+}
+
+.navbar-side ul li a:focus{
+	color: #202020;
+}
+
+#page-wrapper{
+	padding: 25px !important;
+	background: #f3f3f3;
+}
+
+#page-inner2{
+	background: #fff;
+	padding: 1px 26px 26px 26px;
+	min-height: 248px !important;
+	max-height: 420px;
+	overflow: auto;
+	box-shadow: 5px 5px 2.5px #aaaaaa;
+}
+
+#page-inner{
+	background: #fff;
+	padding: 1px 26px 0 26px;
+	min-height: 190px !important;
+	max-height: 650px;
+	overflow: auto;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#card{
+	box-shadow: 5px 5px 2.5px #aaaaaa;
+}
+
+#nav{
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media(min-width: 768px)
+{
+	#page-wrapper{
+		margin: 0 0 0 225px;
+		padding: 15px;
+		min-height: 701px;
+	}
+
+	.navbar-side{
+		width: 225px;
+		position: absolute;
+		z-index: 1;
+		min-height: 701px; 
+	}
+}
+
+
+/* Font-Quicksand */
+
+@font-face {
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Quicksand Regular'), local('Quicksand-Regular'), 
+	url(../fonts/quicksand.woff2) format('woff2');
+}
