@@ -8,7 +8,7 @@
 					<option value="">-- Pilih --</option>
 					<?php foreach ( $jurusan as $key => $value ): ?>
 					<option value="<?= $value['id_jurusan'] ?>">
-						<?= $value['nama_jurusan'] ?> 
+						<?= htmlentities($value['nama_jurusan']) ?> 
 					</option>
 					<?php endforeach ?>
 				</select>
@@ -35,7 +35,7 @@
 				<select class="form-control" id="tahun" name="id_tahun_ajaran" required>
 					<option value="">-- Pilih --</option>
 					<?php foreach ( $tahun_ajaran as $key => $value ): ?>
-						<option value="<?= $value['id_tahun_ajaran'] ?> "><?= $value['nama_tahun_ajaran'] ?> </option>
+						<option value="<?= $value['id_tahun_ajaran'] ?> "><?= htmlentities($value['nama_tahun_ajaran']) ?> </option>
 					<?php endforeach ?>
 				</select>
 			</div>

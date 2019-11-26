@@ -7,7 +7,7 @@
 			<div class="form-group col-md-6">
 				<select class="form-control" name="tahun" required="" onchange="submit()">
 					<?php foreach ( $tahun_ajaran as $key => $value ): ?>
-						<option value="<?= $value['id_tahun_ajaran'] ?>" <?php if($value['id_tahun_ajaran']==$tahun){echo "selected";} ?>><?= $value['nama_tahun_ajaran'] ?> 
+						<option value="<?= $value['id_tahun_ajaran'] ?>" <?php if($value['id_tahun_ajaran']==$tahun){echo "selected";} ?>><?= htmlentities($value['nama_tahun_ajaran']) ?> 
 					</option>
 				<?php endforeach ?>
 			</select>
@@ -31,8 +31,8 @@
 		<?php foreach ( $kelas as $key => $value ): ?>
 			<tr>
 				<td><?= $key+1 ?></td>
-				<td><?= $value['nama_tingkat'] . " " . $value['nama_jurusan'] . " " . $value['nama_kelas'] ?></td>
-				<td><?= $value['nama_tahun_ajaran'] ?></td>
+				<td><?= $value['nama_tingkat'] . " " . htmlentities($value['nama_jurusan']) . " " . $value['nama_kelas'] ?></td>
+				<td><?= htmlentities($value['nama_tahun_ajaran']) ?></td>
 				<td><?= hitung_siswa($value['id_kelas']) ?></td>
 				<td>
 					<a href="<?= site_url("admin/kelas/hapus/$value[id_kelas]") ?>"><span class="oi oi-delete" title="Hapus" onclick="return confirm('Konfirmasi data akan dihapus ?')"></span></a>

@@ -33,6 +33,7 @@
 						<a href="#">Data Master</a>
 						<ul class="tr-tree-menu">
 							<li><a href="<?= site_url('admin/tahun') ?>">&emsp;&emsp;Data Tahun Ajaran</a></li>
+							<li><a href="<?= site_url('admin/jurusan') ?>">&emsp;&emsp;Data Jurusan</a></li>
 							<li><a href="<?= site_url('admin/kelas') ?>">&emsp;&emsp;Data Kelas</a></li>
 							<li><a href="<?= site_url('admin/siswa') ?>">&emsp;&emsp;Data Siswa</a></li>
 							<li><a href="<?= site_url('admin/mapel') ?>">&emsp;&emsp;Data Mapel</a></li>

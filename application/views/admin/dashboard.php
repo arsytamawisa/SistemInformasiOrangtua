@@ -3,7 +3,7 @@
 		<div class="col-md-4">
 			<div id="card" class="card p-4">
 				<h2>
-					<?= $jml_siswa; ?>
+					<?= $jml_siswa ?>
 					<a href="<?= site_url('admin/siswa') ?>" id="normal">
 						<span class="oi oi-person" title="Data Siswa"></span>
 					</a>
@@ -15,7 +15,7 @@
 		<div class="col-md-4">
 			<div id="card" class="card p-4">
 				<h2>
-					<?= $jml_kelas; ?>
+					<?= $jml_kelas ?>
 					<a href="<?= site_url('admin/kelas') ?>" id="normal">
 						<span class="oi oi-people" title="Data Kelas"></span>
 					</a>
@@ -27,7 +27,7 @@
 		<div class="col-md-4">
 			<div id="card" class="card p-4">
 				<h2>
-					<?= $jml_mapel; ?>
+					<?= $jml_mapel ?>
 					<a href="<?= site_url('admin/mapel') ?>" id="normal">
 						<span class="oi oi-book" title="Data Mapel"></span>
 					</a>
@@ -54,9 +54,9 @@
 						<?php foreach ( $pengumuman as $key => $value ): ?>
 							<tr>
 								<td><?= $key+1 ?></td>
-								<td><?= $value['judul']; ?></td>
+								<td><?= htmlentities($value['judul']) ?></td>
 								<td><?= tanggal_indo($value['tgl'], true) ?></td>
-								<td><?= $value['berkas']; ?></td>
+								<td><?= $value['berkas'] ?></td>
 							</tr>
 						<?php endforeach ?>
 					</tbody>

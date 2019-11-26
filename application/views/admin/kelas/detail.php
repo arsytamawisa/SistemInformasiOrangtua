@@ -1,6 +1,6 @@
 <style>.btn-primary, .btn-danger{width:100%}</style>
 <div id="page-inner">
-	<h3>Data Kelas <?= $kelas['nama_tingkat']; ?> <?= $kelas['nama_jurusan']; ?> <?= $kelas['nama_kelas'] ?></h3> <hr>
+	<h3>Data Kelas <?= $kelas['nama_tingkat'] ?> <?= htmlentities($kelas['nama_jurusan']) ?> <?= $kelas['nama_kelas'] ?></h3> <hr>
 	<form method="POST">
 		<table class="table table-hover" id="datatable">
 			<thead>
@@ -35,7 +35,7 @@
 				<select class="form-control" id="tahun" required>
 					<option value="">-- Pilih Tahun Ajaran --</option>
 					<?php foreach ( $tahun_ajaran as $key => $value ): ?>
-						<option value="<?= $value['id_tahun_ajaran'] ?> "><?= $value['nama_tahun_ajaran'] ?> </option>
+						<option value="<?= $value['id_tahun_ajaran'] ?> "><?= htmlentities($value['nama_tahun_ajaran']) ?> </option>
 					<?php endforeach ?>
 				</select>
 			</div>
@@ -44,7 +44,7 @@
 				<select class="form-control" id="jurusan" required>
 					<option value="">-- Pilih Jurusan --</option>
 					<?php foreach ( $jurusan as $key => $value ): ?>
-						<option value="<?= $value['id_jurusan'] ?> "><?= $value['nama_jurusan'] ?> </option>
+						<option value="<?= $value['id_jurusan'] ?> "><?= htmlentities($value['nama_jurusan']) ?> </option>
 					<?php endforeach ?>
 				</select>
 			</div>

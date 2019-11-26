@@ -10,7 +10,7 @@
 						Semua Jurusan
 					</option>
 					<?php foreach ($jurusan as $key => $value): ?>
-					<option value="<?= $value['id_jurusan']; ?>" <?php if($id_jurusan==$value['id_jurusan']){echo "selected";} ?>><?= $value['nama_jurusan']; ?>
+					<option value="<?= $value['id_jurusan']; ?>" <?php if($id_jurusan==$value['id_jurusan']){echo "selected";} ?>><?= htmlentities($value['nama_jurusan']) ?>
 					</option>
 					<?php endforeach ?>
 				</select>
@@ -34,7 +34,7 @@
 				<tr>
 					<td><?= $key+1 ?></td>
 					<td><?= $value['nama_mapel'] ?></td>
-					<td><?= $value['nama_jurusan'] ?></td>
+					<td><?= htmlentities($value['nama_jurusan']) ?></td>
 					<td><?= $value['kkm'] ?></td>
 					<td>
 						<a href="<?= site_url("admin/mapel/edit/$value[id_detail_mapel]") ?>"><span class="oi oi-pencil" title="Edit"></span></a>&nbsp;

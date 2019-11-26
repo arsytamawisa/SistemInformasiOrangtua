@@ -14,7 +14,7 @@
 			<?php foreach ( $tahun as $key => $value ): ?>
 				<tr>
 					<td><?= $key+1 ?></td>
-					<td><?= $value['nama_tahun_ajaran'] ?></td>
+					<td><?= htmlentities($value['nama_tahun_ajaran']) ?></td>
 					<td><?= $value['status'] ?></td>
 					<td>
 						<a href="<?= site_url("admin/tahun/edit/$value[id_tahun_ajaran]") ?>"><span class="oi oi-pencil" title="Edit"></span></a>&nbsp;
