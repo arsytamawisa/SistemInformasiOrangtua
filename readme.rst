@@ -7,6 +7,7 @@ Karya atau hasil dari Kerja Praktik yang saya kerjakan dalam melaksanakan tugas 
 Berlatar belakang dari kesulitannya orangtua dalam menerima informasi kehadiran anaknya di sekolah dan 'ketidaktahuan' orangtua dengan nilai anaknya yang terkadang hanya bisa diketahui saat penerimaan Rapor, sehingga perlu adanya sistem yang bisa mengontrol masalah tersebut.
 
 
+
 *********
 Fitur & Hak Akses
 *********
@@ -18,6 +19,7 @@ Fitur & Hak Akses
 -  Orangtua
 	* Melihat data kehadiran, nilai dan pengumuman
 	
+
 
 *********
 Requirement
