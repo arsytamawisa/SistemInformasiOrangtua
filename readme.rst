@@ -17,3 +17,14 @@ Fitur & Hak Akses
 
 -  Orangtua
 	* Melihat data kehadiran, nilai dan pengumuman
+	
+
+*********
+Requirement
+*********
+
+-  CodeIginter
+-  Bootstrap
+-  JQuery
+-  MySQL
+-  Ajax
