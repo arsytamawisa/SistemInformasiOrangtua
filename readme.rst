@@ -1,6 +1,6 @@
-###################
+##
 Sistem Informasi Orangtua (Studi Kasus: SMA Taman Madya Jetis) 
-###################
+##
 
 Karya atau hasil dari Kerja Praktik yang saya kerjakan dalam melaksanakan tugas kuliah. 
 
